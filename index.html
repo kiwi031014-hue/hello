@@ -3,54 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>쿠로야 굿즈 프로젝트</title>
+    <title>쿠로야 굿즈 프로젝트 - 메인</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #2B2624; /* 흑단나무 톤의 짙은 브라운 색상으로 변경 */
-            color: #333;
+            background-color: #2B2624; /* 흑단나무 톤 배경 */
             margin: 0;
-            padding: 50px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 화면 세로 중앙 정렬을 위해 추가 */
         }
-        .container {
+        .main-container {
             background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            display: inline-block;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            max-width: 400px;
+            width: 90%;
         }
-        h1 {
-            color: #111;
-        }
-        .goods-img {
-            width: 300px;
-            height: 200px;
-            background-color: #eee;
-            margin: 20px auto;
-            line-height: 200px;
-            color: #888;
-            border-radius: 5px;
-            overflow: hidden; /* 이미지가 영역 밖으로 넘치지 않게 방지 */
-        }
-        .goods-img img {
+        .logo-area {
             width: 100%;
-            height: 100%;
-            object-fit: cover; /* 영역에 맞게 이미지 예쁘게 꽉 채우기 */
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .logo-area img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .btn-lineup {
+            display: inline-block;
+            background-color: #2B2624; /* 버튼도 흑단나무 톤으로 통일 */
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        .btn-lineup:hover {
+            background-color: #413a37; /* 마우스 올렸을 때 살짝 밝아지게 */
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>경성대 쿠로야 굿즈 라인업</h1>
-        <p>쿠로야의 아이덴티티를 담은 특별한 굿즈를 소개합니다.</p>
-        
-        <div class="goods-img">
-            <img src="oya.png" alt="쿠로야 흑단나무 젓가락 세트">
+    <div class="main-container">
+        <div class="logo-area">
+            <img src="쿠로야 로고.jpg" alt="쿠로야 로고">
         </div>
         
-        <p>쿠로야 로고가 각인된 고급스러운 흑단나무 젓가락과 패키징</p>
+        <a href="more.html" class="btn-lineup">굿즈 라인업 보러가기</a>
     </div>
 
 </body>
